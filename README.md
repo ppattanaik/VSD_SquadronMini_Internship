@@ -1,4 +1,3 @@
-![VSD_SquadronMini_Internship  Running  - Oracle VM VirtualBox 4_22_2024 12_04_41 PM](https://github.com/ppattanaik/VSD_SquadronMini_Internship/assets/63561037/704c5446-7743-4b88-aeba-3034b6d9475f)# VSD_SquadronMini_Internship
 ## Installing Prerequisites
 ### RISCV-GNU-TOOLCHAIN
 ![VSD_SquadronMini_Internship  Running  - Oracle VM VirtualBox 4_22_2024 10_09_02 AM](https://github.com/ppattanaik/VSD_SquadronMini_Internship/assets/63561037/f1b7cc50-7980-4da8-877d-9b595c172bde)
