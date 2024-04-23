@@ -14,4 +14,5 @@ Compiling and executing the output
 ### GTK Wave
 ![VSD_SquadronMini_Internship  Running  - Oracle VM VirtualBox 4_22_2024 12_04_41 PM](https://github.com/ppattanaik/VSD_SquadronMini_Internship/assets/63561037/8f6f8ebe-0ff3-406f-ac9e-2ca8d52b4b56)
 ## Block Diagram for implementing a smart dustbin system
-![Block Diagram](https://github.com/ppattanaik/VSD_SquadronMini_Internship/assets/63561037/04815668-a7df-418e-b3d0-0608155c5cbc)
+![Block Diagram](https://github.com/ppattanaik/VSD_SquadronMini_Internship/assets/63561037/d9b81420-0170-4a2e-9296-6c88ff1ad083)
+
