@@ -1,7 +1,8 @@
 # VSD Squadron Mini Internship
 ## Week 1
 ### Task 1
-- Install Oracle Virtual Box and load Ubuntu 20.04 as OS. To download Oracle Virtual Box [Click Here](https://www.virtualbox.org/wiki/Downloads)
+- Install Oracle Virtual Box and load Ubuntu 20.04 as OS.
+  * To download Oracle Virtual Box [Click Here](https://www.virtualbox.org/wiki/Downloads)
   * To download the ISO file for Ubuntu 20.04 [Click Here](https://releases.ubuntu.com/20.04/)
 - Install the RISCV GNU Toolchain. To know the setup procedure [Click Here](https://github.com/riscv-collab/riscv-gnu-toolchain)
 - Install Yosys
