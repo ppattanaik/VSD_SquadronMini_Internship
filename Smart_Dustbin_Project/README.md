@@ -10,13 +10,24 @@ This technology-driven approach offers a hands-free and user-friendly solution f
   - VSD Squadron Mini developement board with CH32V003F4U6 chip with 32-bit RISC-V core based on RV32EC instruction set
   - HC-SR04 Ultrasonic Sensor
   - SG90 Servo Motor
-  - Power Supply
+  - External Power Supply
   - Bread Board
   - Jumper Wires
-## Circuit Connection
-
-### Block Diagram
-![PowerPoint Slide Show  -  Presentation1 29-04-2024 02_43_59](https://github.com/ppattanaik/VSD_SquadronMini_Internship/assets/63561037/0949d0b4-dc11-4988-b671-c498d87daa3b)
+## Circuit Connection Diagram
+![PowerPoint Slide Show  -  Presentation1 29-04-2024 02_54_30](https://github.com/ppattanaik/VSD_SquadronMini_Internship/assets/63561037/01eaacfc-853e-44de-8383-b16c7c57775c)
 
 ###  Table for Pin connection
+| HC-SR04 Ultrasonic Sensor | VSD Squadron Mini |
+| ------------- | ------------- |
+| Trigger pin | PD3 |
+| Echo pin | PD2 |
+| VCC | 5V |
+| GND | GND |
+
+| Servo motor(SG90)  | External Power Supply | VSD Squadron Mini |
+| ------------- | ------------- |------------- |
+| Control pin | - |PD4 |
+| VCC  | 5V | - |
+| GND | GND | GND |
+
 
