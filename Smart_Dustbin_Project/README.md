@@ -27,7 +27,7 @@ This technology-driven approach offers a hands-free and user-friendly solution f
 | Servo motor(SG90)  | External Power Supply | VSD Squadron Mini |
 | ------------- | ------------- |------------- |
 | Control pin | - |PD4 |
-| VCC  | VCC | - |
+| VCC  | 6V | - |
 | GND | GND | GND |
 
 
