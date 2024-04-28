@@ -14,7 +14,7 @@ This technology-driven approach offers a hands-free and user-friendly solution f
   - Bread Board
   - Jumper Wires
 ## Circuit Connection Diagram
-![PowerPoint Slide Show  -  Presentation1 29-04-2024 02_54_30](https://github.com/ppattanaik/VSD_SquadronMini_Internship/assets/63561037/01eaacfc-853e-44de-8383-b16c7c57775c)
+![PowerPoint Slide Show  -  Presentation1 29-04-2024 03_09_19](https://github.com/ppattanaik/VSD_SquadronMini_Internship/assets/63561037/c2d4213d-435a-4330-ae60-8ba3db8c0dd4)
 
 ###  Table for Pin connection
 | HC-SR04 Ultrasonic Sensor | VSD Squadron Mini |
