@@ -16,6 +16,7 @@ This technology-driven approach offers a hands-free and user-friendly solution f
 ## Circuit Connection
 
 ### Block Diagram
+![PowerPoint Slide Show  -  Presentation1 29-04-2024 02_43_59](https://github.com/ppattanaik/VSD_SquadronMini_Internship/assets/63561037/0949d0b4-dc11-4988-b671-c498d87daa3b)
 
 ###  Table for Pin connection
 
