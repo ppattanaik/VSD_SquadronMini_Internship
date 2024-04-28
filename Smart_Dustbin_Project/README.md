@@ -1,1 +1,1 @@
-# Smart Dustbin Project
+Smart Dustbin Project
