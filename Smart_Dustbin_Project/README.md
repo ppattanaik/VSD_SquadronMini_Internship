@@ -9,7 +9,8 @@ This technology-driven approach offers a hands-free and user-friendly solution f
 ## Components Required
   - VSD Squadron Mini developement board with CH32V003F4U6 chip with 32-bit RISC-V core based on RV32EC instruction set
   - HC-SR04 Ultrasonic Sensor
-  - SG90 Servo Motor
+  - 500RPM Gear Motor
+  - L298N Motor Driver Module
   - External Power Supply
   - Bread Board
   - Jumper Wires
@@ -17,6 +18,7 @@ This technology-driven approach offers a hands-free and user-friendly solution f
   - MounRiver Studio
       - To download the studio [Click Here](http://www.mounriver.com/download)
 ## Circuit Connection Diagram
+***To be updated according to the current modification
 ![PowerPoint Slide Show  -  Presentation1 29-04-2024 03_09_19](https://github.com/ppattanaik/VSD_SquadronMini_Internship/assets/63561037/c2d4213d-435a-4330-ae60-8ba3db8c0dd4)
 
 ###  Table for Pin connection
