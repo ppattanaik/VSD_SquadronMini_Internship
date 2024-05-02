@@ -13,6 +13,9 @@ This technology-driven approach offers a hands-free and user-friendly solution f
   - External Power Supply
   - Bread Board
   - Jumper Wires
+## Software Required
+  - MounRiver Studio
+      - To download the studio[Click Here](http://www.mounriver.com/download)
 ## Circuit Connection Diagram
 ![PowerPoint Slide Show  -  Presentation1 29-04-2024 03_09_19](https://github.com/ppattanaik/VSD_SquadronMini_Internship/assets/63561037/c2d4213d-435a-4330-ae60-8ba3db8c0dd4)
 
@@ -127,7 +130,7 @@ int main(void)
     }
 }
 ```
-## Demo Videdo
+## Demo Video
 https://github.com/ppattanaik/VSD_SquadronMini_Internship/assets/63561037/3dace670-d682-4a39-b12c-b5fa99738c5a
 
 
