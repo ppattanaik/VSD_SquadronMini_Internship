@@ -29,11 +29,17 @@ This technology-driven approach offers a hands-free and user-friendly solution f
 | VCC | 5V |
 | GND | GND |
 
-| Servo motor(SG90)  | External Power Supply | VSD Squadron Mini |
+| Gear Motor  | Motor Driver Module | VSD Squadron Mini |
 | ------------- | ------------- |------------- |
-| Control pin | - |PD4 |
+| - | Control pin 1 |PD4 |
+| - | Control pin 2 |PD6 |
 | VCC  | 6V | - |
 | GND | GND | GND |
+
+| Motor Driver Module  | External Power Supply |
+| ------------- | ------------- |
+| VCC | 6V |
+| GND | GND |
 
 ## Working Code
 ```
