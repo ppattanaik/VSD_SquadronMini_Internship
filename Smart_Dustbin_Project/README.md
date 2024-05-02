@@ -32,34 +32,38 @@ This technology-driven approach offers a hands-free and user-friendly solution f
 
 ## Working Code
 ```
+
+//Including Libraries
 #include "debug.h"
 
+//Function to configure GPIO Pins
 void GPIO_Toggle_INIT(void)
 {
-    GPIO_InitTypeDef GPIO_InitStructure = {0};
+    GPIO_InitTypeDef GPIO_InitStructure = {0};   ////Structure variable used for the GPIO configuration
 
-    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOD, ENABLE);
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOD, ENABLE);  ////To Enable the clock for Port D
 
-    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_6 | GPIO_Pin_4 | GPIO_Pin_3;
-    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
-    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
-    GPIO_Init(GPIOD, &GPIO_InitStructure);
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_6 | GPIO_Pin_4 | GPIO_Pin_3; //// Defining Pins to configure
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;  ///// Setting Pin mode as Output type
+    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;  ////Defining GPIO Speed   -----NOTE: There are three options: GPIO_Speed_10MHz, GPIO_Speed_2MHz, GPIO_Speed_50MHz
+    GPIO_Init(GPIOD, &GPIO_InitStructure);    ////Instantiating the GPIO pins with the structure variable
 
-    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_2;
-    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU;
-    //GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
-    GPIO_Init(GPIOD, &GPIO_InitStructure);
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_2;  //// Instantiation of Pins
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU;  ///// Setting Pin mode as Input type
+    GPIO_Init(GPIOD, &GPIO_InitStructure);    ////Instantiating the GPIO pins with the structure variable
 
 
 }
 
+//Main Function
 int main(void)
 {
-    //u8 i = 0, j = 0, k = 0;
-
+  
     NVIC_PriorityGroupConfig(NVIC_PriorityGroup_1);
-    SystemCoreClockUpdate();
-    Delay_Init();
+    SystemCoreClockUpdate(); //// Configure MCU Clock HSI
+    Delay_Init();    ////Dealy for allowing clock to Stabilize
+
+//USART initialization
 #if (SDI_PRINT == SDI_PR_OPEN)
     SDI_Printf_Enable();
 #else
@@ -67,45 +71,56 @@ int main(void)
 #endif
     printf("SystemClk:%d\r\n", SystemCoreClock);
     printf( "ChipID:%08x\r\n", DBGMCU_GetCHIPID() );
-    printf("GPIO Toggle TEST\r\n");
 
+    //Calling Function to Configure GPIO Pins
     GPIO_Toggle_INIT();
 
     while(1)
     {
-        u8 i = 0, j = 0, k = 0;
+        u8 i = 0, j = 0, k = 0;  //// Declaring local Variables
 
-        GPIO_WriteBit(GPIOD, GPIO_Pin_3, SET);
+        GPIO_WriteBit(GPIOD, GPIO_Pin_3, SET);  //// Setting Trigger Pin to send pulses
         Delay_Ms(10);      ///// Pulse Width
-        k = GPIO_ReadInputDataBit(GPIOD, GPIO_Pin_2);
+        k = GPIO_ReadInputDataBit(GPIOD, GPIO_Pin_2); //// Reading pulse captured by echo pin
 
         if (k  == 0){
-            //GPIO_WriteBit(GPIOD, GPIO_Pin_6, SET);
-            Delay_Ms(1000);
-            //Delay_Ms(5000);
+
+            Delay_Ms(1000);   //// Delay to Synchronise with the Clock
+
+            //Defining condition for Motor Spin Direction
             GPIO_WriteBit(GPIOD, GPIO_Pin_6, (i == 0) ? (i = Bit_SET) : (i = Bit_RESET));
             GPIO_WriteBit(GPIOD, GPIO_Pin_4, (j == 0) ? (j = Bit_RESET) : (j = Bit_SET));
             Delay_Ms(1300);
+
+            //Defining condition to stop Motor
             GPIO_WriteBit(GPIOD, GPIO_Pin_6, (i == 0) ? (i = Bit_SET) : (i = Bit_RESET));
             GPIO_WriteBit(GPIOD, GPIO_Pin_4, (j == 0) ? (j = Bit_RESET) : (j = Bit_SET));
             Delay_Ms(5000);
+
+            //Defining condition for Motor Spin Direction
             GPIO_WriteBit(GPIOD, GPIO_Pin_4, (i == 0) ? (i = Bit_SET) : (i = Bit_RESET));
             GPIO_WriteBit(GPIOD, GPIO_Pin_6, (j == 0) ? (j = Bit_RESET) : (j = Bit_SET));
             Delay_Ms(1300);
+
+            //Defining condition to stop Motor
             GPIO_WriteBit(GPIOD, GPIO_Pin_6, (i == 0) ? (i = Bit_SET) : (i = Bit_RESET));
             GPIO_WriteBit(GPIOD, GPIO_Pin_4, (j == 0) ? (j = Bit_RESET) : (j = Bit_SET));
             Delay_Ms(4000);
         }
-        //Conditions to enable motor actuation
-        if (k != 0){
 
-            //GPIO_WriteBit(GPIOD, GPIO_Pin_6, RESET);
-            //Delay_Ms(1000);
+        //Conditions to disable motor actuation
+        if (k != 0){
+            
+            Delay_Ms(1000); //// Delay to Synchronise with the Clock
+
+            //Defining condition to stop Motor
             GPIO_WriteBit(GPIOD, GPIO_Pin_4, (i == 0) ? (i = Bit_SET) : (i = Bit_RESET));
             GPIO_WriteBit(GPIOD, GPIO_Pin_6, (j == 0) ? (j = Bit_SET) : (j = Bit_RESET));
-            Delay_Ms(5000);
+            Delay_Ms(4000);
 
         }
+
+        //Resetting Trigger Pin
         GPIO_WriteBit(GPIOD, GPIO_Pin_3, RESET);
         Delay_Ms(5);
 
