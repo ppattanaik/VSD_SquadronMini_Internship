@@ -32,8 +32,8 @@ This technology-driven approach offers a hands-free and user-friendly solution f
 | ------------- | ------------- |------------- |
 | - | Control pin 1 |PD4 |
 | - | Control pin 2 |PD6 |
-| VCC  | 6V | - |
-| GND | GND | GND |
+| VCC  | OUT1 | - |
+| GND | OUT2 | GND |
 
 | Motor Driver Module  | External Power Supply |
 | ------------- | ------------- |
