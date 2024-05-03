@@ -33,12 +33,12 @@ This technology-driven approach offers a hands-free and user-friendly solution f
 | - | Control pin 1 |PD4 |
 | - | Control pin 2 |PD6 |
 | VCC  | OUT1 | - |
-| GND | OUT2 | GND |
+| GND | OUT2 | - |
 
-| Motor Driver Module  | External Power Supply |
-| ------------- | ------------- |
-| VCC | 6V |
-| GND | GND |
+| Motor Driver Module  | External Power Supply | VSD Squadron Mini |
+| ------------- | ------------- |------------- |
+| VCC | 6V | - |
+| GND | GND | GND |
 
 ## Working Code
 ```
