@@ -18,8 +18,7 @@ This technology-driven approach offers a hands-free and user-friendly solution f
   - MounRiver Studio
       - To download the studio [Click Here](http://www.mounriver.com/download)
 ## Circuit Connection Diagram
-***To be updated according to the current modification
-![PowerPoint Slide Show  -  Presentation1 29-04-2024 03_09_19](https://github.com/ppattanaik/VSD_SquadronMini_Internship/assets/63561037/c2d4213d-435a-4330-ae60-8ba3db8c0dd4)
+<img width="488" alt="PowerPoint Slide Show  -  Presentation1 pptx 5_3_2024 12_29_08 PM" src="https://github.com/ppattanaik/VSD_SquadronMini_Internship/assets/63561037/6cdc1f19-5207-4302-b635-bcbcdc442ea8">
 
 ###  Table for Pin connection
 | HC-SR04 Ultrasonic Sensor | VSD Squadron Mini |
