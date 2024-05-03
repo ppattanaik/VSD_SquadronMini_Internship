@@ -35,9 +35,9 @@ This technology-driven approach offers a hands-free and user-friendly solution f
 | VCC  | OUT1 | - |
 | GND | OUT2 | - |
 
-| Motor Driver Module  | External Power Supply | VSD Squadron Mini |
+|  External Power Supply | Motor Driver Module | VSD Squadron Mini |
 | ------------- | ------------- |------------- |
-| VCC | 6V | - |
+| 6V | VCC | - |
 | GND | GND | GND |
 
 ## Working Code
