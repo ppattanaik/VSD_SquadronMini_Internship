@@ -242,11 +242,12 @@ It helps in identifying vulnerabilities and weaknesses in the system's design an
 ```
 int FaultPin = 3;      // Digital pin 3 configured to introduce voltage change
 int analogPin = A0;   // potentiometer connected to analog pin 9
-int x = 0, y = 0;    // Variable to store analogRead value and map it to analogWrite
-float z = 0;         // variable to store the voltage value
+int x = 0, y = 0; 
+float z = 0;         // variable to store the read value
+
 void setup() {
-  pinMode(FaultPin, OUTPUT);
-  pinMode(analogPin, INPUT);// sets the pin as output
+  pinMode(FaultPin, OUTPUT);// sets the pin as output
+  pinMode(analogPin, INPUT);// sets the pin as input
   Serial.begin(9600);
 }
 
@@ -254,12 +255,9 @@ void loop() {
   x = analogRead(analogPin);  // read the input pin
   y = map(x, 0, 1023, 0, 255);
   z = map(y, 0, 255, 0, 5);
-  analogWrite(FaultPin, y); // Potentiometre value range from 0 to 1023, where as PWM values range from 0 to 255. Hence, val/4 is added.
-  Serial.println(z); //prints voltages supplied from 0 - 5
+  analogWrite(FaultPin, y);
+  Serial.println(z);
 }
-
-}
-
 ```
 
 
