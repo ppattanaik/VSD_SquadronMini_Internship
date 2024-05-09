@@ -223,7 +223,7 @@ It helps in identifying vulnerabilities and weaknesses in the system's design an
   
 ### Implementing fault injection in the Smart Dustbin
 #### Fault Injection Circuit
-<img width="574" alt="PowerPoint Slide Show  -  Presentation1 pptx 5_9_2024 3_08_38 PM (2)" src="https://github.com/ppattanaik/VSD_SquadronMini_Internship/assets/63561037/003bd943-29bb-4eb0-b1c7-2ea543ca347d">
+![Circuit design Daring Gogo - Tinkercad and 1 more page - Personal - Microsoft​ Edge 5_10_2024 3_51_13 AM](https://github.com/ppattanaik/VSD_SquadronMini_Internship/assets/63561037/afc51a51-8e06-4688-8a71-d4200a5335ad)
 
 #### Table for Pin connection
 
@@ -231,7 +231,7 @@ It helps in identifying vulnerabilities and weaknesses in the system's design an
 | ------------- | ------------- |
 | VCC | 5V |
 | GND | GND |
-| OUT | Digital Pin 9 |
+| OUT | Analog Pin 0 |
 
 | Probes | Arduino UNO |
 | ------------- | ------------- |
@@ -241,16 +241,23 @@ It helps in identifying vulnerabilities and weaknesses in the system's design an
 #### Code
 ```
 int FaultPin = 3;      // Digital pin 3 configured to introduce voltage change
-int analogPin = 9;   // potentiometer connected to analog pin 9
-int val = 0;         // variable to store the read value
-
+int analogPin = A0;   // potentiometer connected to analog pin 9
+int x = 0, y = 0;    // Variable to store analogRead value and map it to analogWrite
+float z = 0;         // variable to store the voltage value
 void setup() {
-  pinMode(FaultPin, OUTPUT);  // sets the pin as output
+  pinMode(FaultPin, OUTPUT);
+  pinMode(analogPin, INPUT);// sets the pin as output
+  Serial.begin(9600);
 }
 
 void loop() {
-  val = analogRead(analogPin);  // read the input pin
-  analogWrite(FaultPin, val / 4); // Potentiometre value range from 0 to 1023, where as PWM values range from 0 to 255. Hence, val/4 is added.
+  x = analogRead(analogPin);  // read the input pin
+  y = map(x, 0, 1023, 0, 255);
+  z = map(y, 0, 255, 0, 5);
+  analogWrite(FaultPin, y); // Potentiometre value range from 0 to 1023, where as PWM values range from 0 to 255. Hence, val/4 is added.
+  Serial.println(z); //prints voltages supplied from 0 - 5
+}
+
 }
 
 ```
