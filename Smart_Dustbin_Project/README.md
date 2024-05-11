@@ -149,56 +149,56 @@ It helps in identifying vulnerabilities and weaknesses in the system's design an
 
 ### Methods of Fault Injection
 - Voltage Glitching
-  - Description
+  - Description:
     Introduces brief voltage spikes or drops to disrupt the normal operation of the microcontroller.
-  - Effect
+  - Effect:
     Voltage glitches can cause the microcontroller to execute instructions incorrectly or enter an unexpected state.
 - Clock Glitching:
-  - Description
+  - Description:
     Manipulates the clock signal supplied to the microcontroller to disrupt its operation.
-  - Effect
+  - Effect:
     By altering the clock signal, the timing of instructions can be manipulated, potentially causing the microcontroller to malfunction.
 - Electromagnetic Interference (EMI):
-  - Description
+  - Description:
     External electromagnetic radiation interferes with the microcontroller's operation.
-  - Effect
+  - Effect:
     EMI can cause the microcontroller to execute instructions incorrectly or enter an unexpected state.
 - Faulty Inputs:
-  - Description
+  - Description:
     Introduces invalid or unexpected inputs to the microcontroller.
-  - Effect
+  - Effect:
     Malformed data packets, invalid sensor readings, or unexpected signals can lead to system malfunctions.
 - Code Injection:
-  - Description
+  - Description:
     Injects malicious code into the microcontroller's memory or execution flow, exploiting vulnerabilities in firmware or application code.
-  - Effect
+  - Effect:
     Enables unauthorized access, execution of arbitrary commands, data corruption, denial of service, or privilege escalation, posing significant security risks to the          system.
 - Peripheral Fault Injection:
-  - Description
+  - Description:
     Manipulates peripheral devices connected to the microcontroller to induce faults in their behavior.
-  - Effect
+  - Effect:
     This can lead to communication errors, sensor inaccuracies, actuator malfunctions, or disruptions in the interaction between the microcontroller and peripherals,            potentially compromising system functionality and reliability.
 - JTAG/SWD Manipulation:
-  - Description
+  - Description:
     Alters the Joint Test Action Group (JTAG) or Serial Wire Debug (SWD) interface to inject faults directly into the microcontroller's internal debugging and testing 
     mechanisms.
-  - Effect
+  - Effect:
     May disrupt debugging and testing operations, leading to erroneous diagnosis or inability to identify faults accurately. Additionally, manipulation could potentially 
     compromise system security by allowing unauthorized access or control over the microcontroller's internal functions.
 - Injection via System Reset:
-  - Description
+  - Description:
     Manipulates the system reset mechanism to induce unexpected resets or faults in the microcontroller's startup or initialization process.
-  - Effect
+  - Effect:
     Can cause system instability, data loss, or erratic behavior during startup. Additionally, injection of faults during reset may lead to vulnerabilities such as              bypassing security measures or compromising the integrity of the system's boot process.
 - Radiation-induced Single Event Effects (SEE):
-  - Description
+  - Description:
     Exposes the microcontroller to ionizing radiation, such as cosmic rays or particle radiation, inducing transient faults in its operation.
-  - Effect
+  - Effect:
     May cause bit flips, memory corruption, or logic errors, leading to system malfunctions, data corruption, or unexpected behavior. SEE events can disrupt critical            operations and compromise system reliability, particularly in environments with high radiation levels such as aerospace or high-altitude applications.
 - Quantum-based Fault Injection:
-  - Description
+  - Description:
     Exploits quantum effects, like quantum tunneling or radiation-induced soft errors, to induce faults in the microcontroller's operation at the quantum level.
-  - Effect
+  - Effect:
     Quantum-based fault injection can lead to unpredictable errors, bit flips, or data corruption in the microcontroller's memory or logic circuits. These faults can            compromise system reliability and security, especially in high-performance computing or quantum computing applications where quantum effects play a significant role.
     
 ### Importance of Fault Injection Testing
