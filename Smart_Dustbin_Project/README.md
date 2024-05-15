@@ -225,6 +225,9 @@ It helps in identifying vulnerabilities and weaknesses in the system's design an
 #### Fault Injection Circuit
 ![Circuit design Daring Gogo - Tinkercad and 1 more page - Personal - Microsoft​ Edge 5_10_2024 3_51_13 AM](https://github.com/ppattanaik/VSD_SquadronMini_Internship/assets/63561037/afc51a51-8e06-4688-8a71-d4200a5335ad)
 
+#### Demo
+https://github.com/ppattanaik/VSD_SquadronMini_Internship/assets/63561037/67adef22-a51e-48b3-a5dc-646c1c3ee85f
+
 #### Description
 Here, the PWM pins of arduino along with a potentiometre are used to create a variable voltage suppy for inducing faults into different peripheral components of the Smart Dustbin.
 The potentiometre is connected to a analog pin of the arduino which behaves as input and the output is translated as a change in voltage through the PWM pin of the Arduino.
@@ -306,10 +309,12 @@ https://github.com/ppattanaik/VSD_SquadronMini_Internship/assets/63561037/8745a3
 #### Fault Injected at the PD7 pin of the VSDSquadron Mini
 
 ##### Case 1: Ideal Scenario
+https://github.com/ppattanaik/VSD_SquadronMini_Internship/assets/63561037/3dace670-d682-4a39-b12c-b5fa99738c5a
 
-This video represents the ideal behaiviour of the motor.
+This video represents the ideal behaiviour of the Smart Dustbin.
 
 ##### Case 2: Effect of Injected Fault
+https://github.com/ppattanaik/VSD_SquadronMini_Internship/assets/63561037/e7cb8020-8561-4da4-9a9d-e2f864e165e5
 
 This video demonstrates the effect of the injected fault on the VSDSquadron Mini. As we can see, whenever there is a voltage change at the PD7 pin, the VSDSquadron Mini board resets as the PD7 is internally connected to the same. This will create abnormality in the overall working of the smart dustbin.
 
