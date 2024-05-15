@@ -277,6 +277,7 @@ To Check out the live design [Click Here](https://www.tinkercad.com/things/bEV4Z
 This video demonstrates the effect of the injected fault on the motor. As we can see, whenever there is a voltage change, the motor's RPM changes drastically. This will create abnormality in the functioning of the lid of the smart dustbin.
 
 ##### Case 3: Protection from Injected Fault
+https://github.com/ppattanaik/VSD_SquadronMini_Internship/assets/63561037/d04fc50a-1f1d-4610-b299-23ec7672ef06
 
 To Check out the live design [Click Here](https://www.tinkercad.com/things/1wDC9IvfqZW-magnificent-stantia-juttuli/editel?sharecode=3IyZzXqIk9Y8Fv5M_xK6bjg_vvBQxdZCdlZ0B5tKNvM)
 
