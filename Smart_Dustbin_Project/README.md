@@ -225,6 +225,10 @@ It helps in identifying vulnerabilities and weaknesses in the system's design an
 #### Fault Injection Circuit
 ![Circuit design Daring Gogo - Tinkercad and 1 more page - Personal - Microsoft​ Edge 5_10_2024 3_51_13 AM](https://github.com/ppattanaik/VSD_SquadronMini_Internship/assets/63561037/afc51a51-8e06-4688-8a71-d4200a5335ad)
 
+#### Description
+Here, the PWM pins of arduino along with a potentiometre are used to create a variable voltage suppy for inducing faults into different peripheral components of the Smart Dustbin.
+The potentiometre is connected to a analog pin of the arduino which behaves as input and the output is translated as a change in voltage through the PWM pin of the Arduino.
+
 #### Table for Pin connection
 
 | Potentiometre | Arduino UNO |
@@ -259,7 +263,48 @@ void loop() {
   Serial.println(z);
 }
 ```
+#### Fault Injected at the power supply of the Motor
+
+##### Case 1: Ideal Scenario
+https://github.com/ppattanaik/VSD_SquadronMini_Internship/assets/63561037/555b81cb-e765-4465-922c-f93c6384141b
+This video represents the ideal behaiviour of the motor.
+
+##### Case 2: Effect of Injected Fault
+https://github.com/ppattanaik/VSD_SquadronMini_Internship/assets/63561037/2ff0722d-7454-407d-9177-daa418c8143b
+To Check out the live design [Click Here](https://www.tinkercad.com/things/bEV4ZL2BgTA-tremendous-blad/editel?sharecode=dONx5pNZ-kcBgRq8N-Fbj51CuZ2Xen0yxf2Qs6F0zsc)
+This video demonstrates the effect of the injected fault on the motor. As we can see, whenever there is a voltage change, the motor's RPM changes drastically. This will create abnormality in the functioning of the lid of the smart dustbin.
+
+##### Case 3: Protection from Injected Fault
+
+To Check out the live design [Click Here](https://www.tinkercad.com/things/1wDC9IvfqZW-magnificent-stantia-juttuli/editel?sharecode=3IyZzXqIk9Y8Fv5M_xK6bjg_vvBQxdZCdlZ0B5tKNvM)
+This video represents the protecction of the circuit by adding capacitors across the power supply. Here, whenever there is a voltage change, the capacitors compensate for the same helping to maintain a steady voltage due to which RPM fuctuations for the motor are balanced.
+
+#### Fault Injected at the power supply of the Ultrasonic Sensor
+
+##### Case 1: Ideal Scenario
+https://github.com/ppattanaik/VSD_SquadronMini_Internship/assets/63561037/38e6eed3-7dcb-4d84-8a5d-59643a4ef531
+This video represents the ideal behaiviour of the ultrsonic sensor.
+
+##### Case 2: Effect of Injected Fault
+https://github.com/ppattanaik/VSD_SquadronMini_Internship/assets/63561037/cc78fcd5-5797-417d-b7df-c3748fe43e6e
+To Check the live design [Click Here](https://www.tinkercad.com/things/eBlMO06JBN8-brilliant-amberis/editel?sharecode=GxdkyT9tzj8WzQl3LzucDrWravYdJ5jXIrriUrjyafk)
+This video demonstrates the effect of the injected fault on the ultrasonic sensor. As we can see, whenever there is a voltage change, the ultrasonic sensor fails to read the position of the object placed in front of it. This will create abnormality in the object detection functionality of the smart dustbin.
 
 
+##### Case 3: Protection from Injected Fault
+https://github.com/ppattanaik/VSD_SquadronMini_Internship/assets/63561037/8745a390-da35-4075-97cb-2407ccb0b17e
+To Check the live design [Click Here](https://www.tinkercad.com/things/2IXolzM2mSY-fantastic-blad/editel?sharecode=RvMiWAUKqm-hhwDDny_8lUqoO6Cw99AI5paqwpgcLtg)
+This video represents the protecction of the circuit by adding capacitors across the power supply. Here, whenever there is a voltage change, the capacitors compensate for the same helping to maintain a steady voltage due to there is no abnormal variation in the reading of the ultrasonic sensor.
 
+#### Fault Injected at the PD7 pin of the VSDSquadron Mini
 
+##### Case 1: Ideal Scenario
+
+This video represents the ideal behaiviour of the motor.
+
+##### Case 2: Effect of Injected Fault
+
+This video demonstrates the effect of the injected fault on the VSDSquadron Mini. As we can see, whenever there is a voltage change at the PD7 pin, the VSDSquadron Mini board resets as the PD7 is internally connected to the same. This will create abnormality in the overall working of the smart dustbin.
+
+##### Case 3: Protection from Injected Fault
+Ensure proper insulation of the PD7 pin to prevent exploitation.
