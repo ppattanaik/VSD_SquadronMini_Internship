@@ -230,7 +230,7 @@ https://github.com/ppattanaik/VSD_SquadronMini_Internship/assets/63561037/67adef
 
 #### Description
 Here, the PWM pins of arduino along with a potentiometre are used to create a variable voltage suppy for inducing faults into different peripheral components of the Smart Dustbin.
-The potentiometre is connected to a analog pin of the arduino which behaves as input and the output is translated as a change in voltage through the PWM pin of the Arduino.
+The potentiometre is connected to an analog pin of the arduino which behaves as an input and the output is translated as a change in voltage through the PWM pin of the Arduino.
 
 #### Table for Pin connection
 
@@ -284,7 +284,7 @@ https://github.com/ppattanaik/VSD_SquadronMini_Internship/assets/63561037/d04fc5
 
 - To Check out the live design [Click Here](https://www.tinkercad.com/things/1wDC9IvfqZW-magnificent-stantia-juttuli/editel?sharecode=3IyZzXqIk9Y8Fv5M_xK6bjg_vvBQxdZCdlZ0B5tKNvM)
 
-- This video represents the protecction of the circuit by adding capacitors across the power supply. Here, whenever there is a voltage change, the capacitors compensate for the same helping to maintain a steady voltage due to which RPM fuctuations for the motor are balanced.
+- This video represents the protection of the circuit by adding capacitors across the power supply. Here, whenever there is a voltage change, the capacitors compensate for the same helping to maintain a steady voltage due to which RPM fuctuations for the motor are balanced.
 
 #### Fault Injected at the power supply of the Ultrasonic Sensor
 
@@ -304,7 +304,7 @@ https://github.com/ppattanaik/VSD_SquadronMini_Internship/assets/63561037/cc78fc
 https://github.com/ppattanaik/VSD_SquadronMini_Internship/assets/63561037/8745a390-da35-4075-97cb-2407ccb0b17e
 
 - To Check the live design [Click Here](https://www.tinkercad.com/things/2IXolzM2mSY-fantastic-blad/editel?sharecode=RvMiWAUKqm-hhwDDny_8lUqoO6Cw99AI5paqwpgcLtg)
-- This video represents the protecction of the circuit by adding capacitors across the power supply. Here, whenever there is a voltage change, the capacitors compensate for the same helping to maintain a steady voltage due to there is no abnormal variation in the reading of the ultrasonic sensor.
+- This video represents the protection of the circuit by adding capacitors across the power supply. Here, whenever there is a voltage change, the capacitors compensate for the same helping to maintain a steady voltage due to there is no abnormal variation in the reading of the ultrasonic sensor.
 
 #### Fault Injected at the PD7 pin of the VSDSquadron Mini
 
