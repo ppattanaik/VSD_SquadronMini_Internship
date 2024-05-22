@@ -303,7 +303,7 @@ https://github.com/ppattanaik/VSD_SquadronMini_Internship/assets/63561037/cc78fc
 ##### Case 3: Protection from Injected Fault
 https://github.com/ppattanaik/VSD_SquadronMini_Internship/assets/63561037/8745a390-da35-4075-97cb-2407ccb0b17e
 
-- To Check the live design [Click Here](https://www.tinkercad.com/things/2IXolzM2mSY-fantastic-blad/editel?sharecode=RvMiWAUKqm-hhwDDny_8lUqoO6Cw99AI5paqwpgcLtg)
+- To Check the live design [Click Here](https://www.tinkercad.com/things/e8WJiBFlT4m-magnificent-jarv-krunk/editel?sharecode=7ypKf_hyKu80MO69_4_UApOJacJRzaI3YmZBkJSjlMQ)
 - This video represents the protection of the circuit by adding capacitors across the power supply. Here, whenever there is a voltage change, the capacitors compensate for the same helping to maintain a steady voltage due to there is no abnormal variation in the reading of the ultrasonic sensor.
 
 #### Fault Injected at the PD7 pin of the VSDSquadron Mini
