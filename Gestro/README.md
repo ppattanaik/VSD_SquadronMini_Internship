@@ -1,5 +1,5 @@
 ###  Table for Pin connection
-| HC-SR04 Ultrasonic Sensor 1| VSD Squadron Mini | HC-SR04 Ultrasonic Sensor 1|
+| HC-SR04 Ultrasonic Sensor 1| VSD Squadron Mini | HC-SR04 Ultrasonic Sensor 2|
 | ------------- | ------------- | ------------- |
 | Trigger pin | PD3 | PD4 |
 | Echo pin | PD2 | PD6 |
