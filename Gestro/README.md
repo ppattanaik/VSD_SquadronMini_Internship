@@ -6,10 +6,9 @@
 | VCC | 5V |
 | GND | GND |
 
-| HC-SR04 Ultrasonic Sensor 2| VSD Squadron Mini |
-| ------------- | ------------- |
-| Trigger pin | PD4 |
-| Echo pin | PD6 |
-| VCC | 5V |
-| GND | GND |
-
+| External Power Supply | HC-SR04 Ultrasonic Sensor 2| VSD Squadron Mini |
+| ------------- | ------------- | ------------- |
+| - | Trigger pin | PD4 |
+| - | Echo pin | PD6 |
+| 5V | VCC | - |
+| GND | GND | GND |
